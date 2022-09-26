@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="inputform">
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="nama" />
+
+          <label for="nim">NIM</label>
+          <input type="number" name="nim" id="nim" />
+
+          <label for="nilai">Nilai</label>
+          <input type="number" name="nilai" id="nilai" />
+
+          <input type="submit" class="submit" onclick="tambahData()" />
+        </div>
+        <div class="tableform">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>NO</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Nilai</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Created by <a href="https://github.com/maybeenang">Elang</a></span>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
